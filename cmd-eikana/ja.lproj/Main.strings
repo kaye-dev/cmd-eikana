@@ -344,14 +344,17 @@
 /* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[2] = "⇧かな"; ObjectID = "f2N-dm-xIa"; */
 "f2N-dm-xIa.ibShadowedObjectValues[2]" = "⇧かな";
 
-/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[3] = "select the previous input source"; ObjectID = "f2N-dm-xIa"; */
-"f2N-dm-xIa.ibShadowedObjectValues[3]" = "前の入力ソースを選択";
+/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[3] = "Toggle (英数 ⇄ かな)"; ObjectID = "f2N-dm-xIa"; */
+"f2N-dm-xIa.ibShadowedObjectValues[3]" = "Toggle (英数 ⇄ かな)";
 
-/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[4] = "select next source in input menu"; ObjectID = "f2N-dm-xIa"; */
-"f2N-dm-xIa.ibShadowedObjectValues[4]" = "入力メニューの次のソースを選択";
+/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[4] = "select the previous input source"; ObjectID = "f2N-dm-xIa"; */
+"f2N-dm-xIa.ibShadowedObjectValues[4]" = "前の入力ソースを選択";
 
-/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[5] = "Disable"; ObjectID = "f2N-dm-xIa"; */
-"f2N-dm-xIa.ibShadowedObjectValues[5]" = "Disable";
+/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[5] = "select next source in input menu"; ObjectID = "f2N-dm-xIa"; */
+"f2N-dm-xIa.ibShadowedObjectValues[5]" = "入力メニューの次のソースを選択";
+
+/* Class = "NSComboBoxCell"; f2N-dm-xIa.ibShadowedObjectValues[6] = "Disable"; ObjectID = "f2N-dm-xIa"; */
+"f2N-dm-xIa.ibShadowedObjectValues[6]" = "Disable";
 
 /* Class = "NSMenuItem"; title = "move one down"; ObjectID = "fY1-dw-1o1"; */
 "fY1-dw-1o1.title" = "1つ下に移動";
