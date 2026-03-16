@@ -98,5 +98,6 @@ fastlane/screenshots
 fastlane/test_output
 
 # AI tools
-.claude/
-.serena/
+.claude/plans/
+.claude/settings.json
+.claude/settings.local.json
