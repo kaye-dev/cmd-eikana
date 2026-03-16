@@ -6,7 +6,19 @@
 //  Copyright (c) 2016 iMasanari
 //
 
+import Carbon
 import Cocoa
+
+func isCurrentInputSourceJapanese() -> Bool {
+  guard let source = TISCopyCurrentKeyboardInputSource()?.takeRetainedValue() else {
+    return false
+  }
+  guard let langsPtr = TISGetInputSourceProperty(source, kTISPropertyInputSourceLanguages) else {
+    return false
+  }
+  let langs = Unmanaged<CFArray>.fromOpaque(langsPtr).takeUnretainedValue() as! [String]
+  return langs.first == "ja"
+}
 
 var activeAppsList: [AppData] = []
 var exclusionAppsList: [AppData] = []
@@ -338,6 +350,17 @@ class KeyEvent: NSObject {
       if mappings.output.keyCode == 999 {
         // 999 is Disable
         return nil
+      }
+
+      // 998 is Toggle (英数 ⇄ かな)
+      if mappings.output.keyCode == 998 {
+        let toggleKeyCode: CGKeyCode = isCurrentInputSourceJapanese() ? 102 : 104
+        event.setIntegerValueField(.keyboardEventKeycode, value: Int64(toggleKeyCode))
+        event.flags = CGEventFlags(
+          rawValue: (event.flags.rawValue & ~mappings.input.flags.rawValue)
+            | mappings.output.flags.rawValue
+        )
+        return event
       }
 
       event.setIntegerValueField(.keyboardEventKeycode, value: Int64(mappings.output.keyCode))

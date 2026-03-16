@@ -275,6 +275,8 @@ let keyCodeDictionary: [CGKeyCode: String] = [
   145: "BRIGHTNESS_DOWN",
   160: "Expose_All",
 
+  998: "Toggle (英数 ⇄ かな)",
+
   // media key (bata)
   999: "Disable",
   1000 + UInt16(NX_KEYTYPE_SOUND_UP): "Sound_up",

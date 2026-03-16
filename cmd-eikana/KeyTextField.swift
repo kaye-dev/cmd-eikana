@@ -52,6 +52,8 @@ class KeyTextField: NSComboBox {
         shortcut = KeyboardShortcut(
           keyCode: CGKeyCode(parameters[1]), flags: CGEventFlags(rawValue: UInt64(parameters[2])))
       }
+    case "Toggle (英数 ⇄ かな)":
+      shortcut = KeyboardShortcut(keyCode: CGKeyCode(998))
     case "Disable":
       shortcut = KeyboardShortcut(keyCode: CGKeyCode(999))
     default:

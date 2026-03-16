@@ -811,7 +811,7 @@
                                                                 <comboBox verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eU8-3g-mgj" customClass="KeyTextField" customModule="_英かな" customModuleProvider="target">
                                                                     <rect key="frame" x="3" y="-5" width="147" height="26"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="Eisuu" buttonBordered="NO" completes="NO" numberOfVisibleItems="6" id="f2N-dm-xIa">
+                                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" title="Eisuu" buttonBordered="NO" completes="NO" numberOfVisibleItems="7" id="f2N-dm-xIa">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -819,6 +819,7 @@
                                                                             <string>英数</string>
                                                                             <string>かな</string>
                                                                             <string>⇧かな</string>
+                                                                            <string>Toggle (英数 ⇄ かな)</string>
                                                                             <string>select the previous input source</string>
                                                                             <string>select next source in input menu</string>
                                                                             <string>Disable</string>
